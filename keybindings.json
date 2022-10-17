@@ -1,0 +1,29 @@
+// Place your key bindings in this file to override the defaults
+[
+    // Toggle between terminal and editor focus
+    {
+        "key":     "ctrl+alt+x",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key":     "ctrl+alt+x",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when":    "terminalFocus"
+    },
+    // Ensure that tab button works in vim.
+    {
+        "key": "tab",
+        "command": "tab",
+        "when": "editorTextFocus && !editorTabMovesFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "outdent",
+        "when": "editorTextFocus && !editorTabMovesFocus"
+    },
+    // Disable vim
+    {
+      "key": "ctrl+alt+s",
+      "command": "toggleVim"
+    },
+]

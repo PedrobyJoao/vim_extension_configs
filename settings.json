@@ -1,0 +1,48 @@
+{
+    "editor.fontSize": 16,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.external.linuxExec": "bash",
+    "window.restoreFullscreen": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "haskell.manageHLS": "GHCup",
+    // Vim Configs
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+        "before": ["j", "k"],
+        "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+        },
+        {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+        },
+        {
+        "before": ["K"],
+        "commands": ["lineBreakInsert"],
+        "silent": true
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // Don't yank selected word when pasting
+        {
+        "before": ["p"],
+        "after": ["p", "g", "v", "y"]
+        },       
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "window.zoomLevel": -1
+}
