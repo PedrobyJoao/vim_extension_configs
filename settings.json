@@ -38,6 +38,27 @@
         "before": ["p"],
         "after": ["p", "g", "v", "y"]
         },       
+        // Add symbol between selected text ((), {}, "")
+        {
+        "before": ["<leader>", "s", "("],
+        "after": ["s", "(", ")", "<Esc>", "h", "p"]
+        },
+        {
+        "before": ["<leader>", "s", "["],
+        "after": ["s", "[", "]", "<Esc>", "h", "p"]
+        },
+        {
+        "before": ["<leader>", "s", "{"],
+        "after": ["s", "{", "}", "<Esc>", "h", "p"]
+        },
+        {
+        "before": ["<leader>", "s", "\""],
+        "after": ["s", "\"", "\"", "<Esc>", "h", "p"]
+        },
+        {
+        "before": ["<leader>", "s", "'"],
+        "after": ["s", "'", "'", "<Esc>", "h", "p"]
+        }
     ],
     "vim.leader": "<space>",
     "vim.handleKeys": {
